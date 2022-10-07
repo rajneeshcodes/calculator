@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive-table</title>
+    <style>
+       *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           letter-spacing: 0.5px;
+       }
+       body{
+           background-color: rgb(236, 221, 221);
+       }
+       .invoice-table{
+           border-collapse:collapse;
+           width: 18em;
+           height: 23rem;
+           background-color: rgb(219, 219, 219);
+           border-radius: 10px;
+           box-shadow: 20px 10px 30px 5px rgba(163, 37, 37, 0.15);
+           margin: 105px auto;
+       }
+       .invoice-table thead tr{
+           border-bottom: 1px ;
+       }
+       
+       .invoice-table thead tr td{
+           font-size: 15px;
+           letter-spacing: 1px;
+           color: rgb(71, 8, 8);
+       }
+        .invoice-table tfoot tr td{
+           font-size: 18px;
+           letter-spacing: 2px;
+           color: rgb(25, 143, 9);
+           padding: 8px;
+           font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif  ;
+           
+
+       } 
+        .invoice-table tbody tr td{
+           padding: 9px;
+           
+
+       }
+       .invoice-table thead tr td:nth-last-child(1),
+       .invoice-table tbody tr td:nth-last-child(1),.invoice-table tfoot tr td:nth-last-child(1){
+           text-align: right;
+       } 
+       .cvr{
+           height: 100vh;
+           position: relative;
+           background-repeat: no-repeat;
+           background-position: center;
+           background-size: cover;
+
+       }
+    </style>
+</head>
+<body>
+    <table class="invoice-table" border="1">
+        
+    <thead>
+     <tr>
+        <td>Product</td>
+        <td>Quantity</td>
+        <td>Price</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Chilli Potato</td>
+        <td>2</td>
+        <td>140</td>
+    </tr>   
+    <tr>
+        <td>Burger</td>
+        <td>1</td>
+        <td>50</td>
+    </tr><tr>
+        <td>Curry Rice</td>
+        <td>1</td>
+        <td>120</td>
+    </tr><tr>
+        <td>Fries</td>
+        <td>1</td>
+        <td>50</td>
+    </tr><tr>
+        <td>Coldrink</td>
+        <td>2</td>
+        <td>100</td>
+    </tr><tr>
+        <td> Masala tea</td>
+        <td>2</td>
+        <td>40</td>
+    </tr><tr>
+        <td>Coffee</td>
+        <td>2</td>
+        <td>90</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="2" align="right">Total</td>
+        <td>590</td>   
+        
+    </tr>
+    </tfoot>
+    </tbody>      
+    </table>
+    <div class="crv">
+    </div>
+</body>
+</html>
